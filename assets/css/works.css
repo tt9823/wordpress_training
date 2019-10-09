@@ -1,0 +1,110 @@
+body {
+	background: rgb(241, 241, 241);
+}
+
+.archive-title {
+	margin-top: 40px;
+	border-bottom: solid 2px rgb(156, 149, 149);
+	color: rgb(71, 71, 71);
+	width: 300px;
+	font-family: "East Sea Dokdo", cursive;
+	font-family: "Libre Baskerville", serif;
+}
+
+.kiji-list {
+	margin: 0 0 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.kiji-list {
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px solid rgb(194, 193, 193);
+}
+
+.kiji-list a:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.kiji-list a:hover {
+	background-color: rgb(224, 222, 222);
+	box-sizing: content-box;
+}
+
+.kiji-list img {
+	float: left;
+	width: 220px;
+	height: 150px;
+	position: relative;
+	left: 50px;
+	object-fit: cover;
+}
+
+.kiji-list h2 {
+	font-size: 2em;
+	line-height: 1.4;
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-family: "East Sea Dokdo", cursive;
+	font-family: "Libre Baskerville", serif;
+}
+
+.kiji-date {
+	font-size: 0.8em;
+	margin-bottom: 8px;
+	color: #666;
+}
+
+.cat-data {
+	font-size: 0.6em;
+	padding: 3px 5px;
+	text-align: center;
+	white-space: nowrap;
+	color: #fff;
+	border-radius: 3px;
+	background-color: #464646;
+}
+
+.kiji-list p {
+	font-size: 0.8em;
+	margin: 10px 0 0;
+}
+
+.text {
+	width: 500px;
+	margin-left: 300px;
+	text-align: left;
+}
+
+.container-fluid:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+.contents {
+	float: right;
+	width: 70%;
+	margin-right: 2%;
+}
+
+.blog-list {
+	height: auto;
+	height: 100%;
+}
+
+.page-numbers {
+	text-align: center;
+}
+
+ul.page-numbers li {
+	display: inline-block;
+}
+
+.blog-inner {
+	margin-left: 100px;
+}

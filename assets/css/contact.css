@@ -1,0 +1,36 @@
+
+body {
+	background: rgb(252, 252, 252);
+}
+
+h1 {
+  font-family: 'Georgia';
+}
+
+.container {
+	height: 600px;
+}
+
+.col-md-8 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+  height: auto;
+  text-align: center;
+}
+
+#content-label {
+  float: left;
+  margin-right: 13px; 
+}
+
+.content {
+  float: left;
+  width: 500px;
+  border-color: rgb(216, 216, 216);
+}
+
+p {
+	display: block;
+	overflow: hidden;
+	content: "";
+  }

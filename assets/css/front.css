@@ -1,0 +1,239 @@
+@charset "utf-8";
+<!--エンコードがUTF-8であることを指定-->
+/*
+theme Name: WordPressトレーニング
+Author: Takeshi Torizuka
+Description: original theme
+version： 1.0.0
+*/
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+
+/* .jumbotron {
+  background: #DD2911 !important;
+  color: #FFF;
+} */
+
+html {
+  height: 100%;
+  display: flex;
+}
+
+body {
+  margin: auto;
+  background-color: rgb(252, 252, 252);
+}
+
+.alrazy-title {
+  font-family: 'East Sea Dokdo', cursive;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 300px;
+  font-size: 6vw;
+  font-size: calc( 70vw / var(--char-total) );
+  position: relative;
+  padding: 0.4em 0;
+  overflow: hidden;
+  padding-top: 130px;
+}
+
+.alrazy-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 5;
+  left: 0;
+  right: 0;
+  border-bottom: solid 0.05em;
+  -webkit-animation: underline 1s cubic-bezier(0.8, 0, 0, 1);
+          animation: underline 1s cubic-bezier(0.8, 0, 0, 1);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes underline {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+@keyframes underline {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+.alrazy-title .word {
+  display: inline-block;
+  -webkit-animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
+          animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: calc( .5s + (.1s * var(--word-index)) );
+          animation-delay: calc( .5s + (.1s * var(--word-index)) );
+}
+@-webkit-keyframes slide-up {
+  from {
+    -webkit-transform: translateY(125%);
+            transform: translateY(125%);
+  }
+}
+@keyframes slide-up {
+  from {
+    -webkit-transform: translateY(125%);
+            transform: translateY(125%);
+  }
+}
+
+.jumbotron {
+  color: rgb(206, 204, 204);
+  text-align: center;
+  margin-bottom: 0%;
+  background-image: url('http://vccw2.test/wp-content/uploads/2019/04/home.jpg');
+  background-size: cover;
+  padding-top: 30px;
+}
+
+.jumbotron-extend {
+  height: 100vh;
+}
+
+.blog-section {
+  height: 1170px;
+  border-bottom: solid 0.5px rgb(235, 235, 235);
+}
+
+.work-section {
+  height: 800px;
+  border-bottom: solid 0.5px rgb(235, 235, 235);
+}
+
+.contact-section {
+  height: 600px;
+}
+
+.section-title {
+  margin: 0 0 15px;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition : all 1500ms;
+}
+
+.kiji-list {
+  margin: 0 0 15px;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition : all 1500ms;
+}
+
+.kiji-list a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #000;
+  height: 290px;
+}
+
+.kiji-list a:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.kiji-list :hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.kiji-list img {
+  float: left;
+  width: 480px;
+  height: 250px;
+  position: relative; left: 50px;
+  object-fit: cover;
+  /* -webkit-filter: grayscale(50%);
+  filter: grayscale(50%); */
+}
+
+.kiji-list h2 {
+  font-size: 2em;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: 'East Sea Dokdo', cursive;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.kiji-date {
+  font-size: .8em;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.cat-data {
+  font-size: .6em;
+  padding: 3px 5px;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #464646;
+}
+
+.kiji-list p {
+  font-size: .8em;
+  margin: 10px 0 0;
+}
+
+.text {
+  width: 750px;
+  height: 250px;
+  margin-left: 300px;
+  padding-left: 255px;
+  padding-right: 0px;
+  text-align: left;
+}
+
+.works-section1, .works-section2, .works-section3 {
+  height: 550px;
+  position: relative; top: 50px;
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition : all 1500ms;
+}
+
+.works div:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.works div:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+
+#works-img {
+  height: 267px;
+}
+
+h1 {
+  text-align: center;
+  position: relative; top: 40px;
+  margin-bottom: 30px;
+  font-family: 'Georgia';
+  margin-bottom: 50px;
+}
+
+.attachment-medium {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.contact-content {
+  padding: 100px 0px;
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition : all 1500ms;
+}

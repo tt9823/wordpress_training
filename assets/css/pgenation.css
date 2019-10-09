@@ -1,0 +1,7 @@
+.page-numbers {
+  text-align: center;
+}
+
+ul.page-numbers li {
+  display: inline-block;
+}
